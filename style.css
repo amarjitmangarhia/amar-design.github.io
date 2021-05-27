@@ -135,3 +135,90 @@ h2 {
 .get-started-button:hover {
   background-color: rgb(175, 170, 170);
 }
+
+@media (max-width: 720px) {
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+
+  .header {
+    /* background-color: rgb(150, 165, 233); */
+    padding: 20px;
+    grid-area: header;
+  }
+  .main {
+    /* background-color: rgb(121, 224, 185); */
+    padding: 20px;
+    grid-area: main;
+  }
+
+  .footer {
+    /* background-color: rgb(150, 165, 233); */
+    padding: 16px;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    margin: 3px 20px 0px 20px;
+  }
+
+  .get-started-button,
+  .logo {
+    display: none;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    border-top: 1px solid black;
+
+    border-bottom: 1px solid black;
+  }
+
+  .first-image {
+    float: left;
+    width: 300px;
+    height: 200px;
+    transition: 0.2s;
+  }
+
+  .h2-tag {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .para {
+    font-size: 12px;
+  }
+  .discover-button {
+    padding: 10px;
+    font-size: 10px;
+    width: 100px;
+    margin-top: 25px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(229, 226, 226);
+    font-weight: 500;
+    transition: 0.2s;
+  }
+  li {
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(241, 239, 239);
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 12px;
+    margin: 0px;
+  }
+}
