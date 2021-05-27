@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: rgb(248, 237, 237); */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.header {
+  /* background-color: rgb(150, 165, 233); */
+  padding: 20px;
+  grid-area: header;
+}
+.main {
+  /* background-color: rgb(121, 224, 185); */
+  padding: 20px;
+  grid-area: main;
+}
+
+.footer {
+  /* background-color: rgb(150, 165, 233); */
+  padding: 16px;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  margin: 3px 20px 0px 20px;
+}
+
+/* ----------------------------------------------- */
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  border-top: 1px solid black;
+
+  border-bottom: 1px solid black;
+}
+
+li {
+  margin: 3px 20px 3px 0px;
+  padding: 10px;
+  background-color: rgb(241, 239, 239);
+}
+
+li:hover {
+  background-color: rgb(175, 170, 170);
+}
+
+.logo {
+  margin-right: 40px;
+  /* background-color: red; */
+  padding: 10px;
+}
+
+.get-started-button {
+  /* background-color: red; */
+  padding: 15px;
+  margin-left: auto;
+  background-color: rgb(229, 226, 226);
+  border-radius: 100px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  /* width: 100%; */
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.first-para {
+  margin: 100px;
+}
+
+.h2-tag {
+  font-size: 55px;
+}
+
+.para {
+  font-size: 15px;
+  margin-top: px;
+  line-height: 20px;
+}
+
+.discover-button {
+  padding: 15px;
+  width: 130px;
+  margin-top: 50px;
+  border-radius: 40px;
+  border: none;
+  background-color: rgb(229, 226, 226);
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.first-image {
+  float: right;
+  width: 600px;
+  height: 400px;
+  margin: -50px 0px 20px 8px;
+  transition: 0.2s;
+}
+
+.first-image:hover,
+.discover-button:hover {
+  box-shadow: 0px 1px 5px rgb(80, 79, 79);
+}
+.get-started-button:hover {
+  background-color: rgb(175, 170, 170);
+}
